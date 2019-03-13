@@ -433,6 +433,6 @@ def gh_deploy(ctx):
     result = ctx.run('git rev-parse HEAD', hide='both')
     sha = result.stdout.strip().split('\n')[0]
     ctx.run('ghp-import '
-            '-c "cinematiccolor.org" '
+#            '-c "cinematiccolor.org" '
             '-m "Deploy {0} with \"ghp-import\"." '
             '-p {1}'.format(sha, HTML_RELEASE_DIRECTORY))
