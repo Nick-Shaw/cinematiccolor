@@ -1091,7 +1091,10 @@
                               3
                             </mn>
                             <mn>
-                              1
+                              0
+                            </mn>
+                            <mn>
+                              8
                             </mn>
                           </mtd>
                         </mtr>
@@ -1192,7 +1195,10 @@
                               3
                             </mn>
                             <mn>
-                              1
+                              0
+                            </mn>
+                            <mn>
+                              8
                             </mn>
                           </mtd>
                         </mtr>
@@ -7525,9 +7531,9 @@
           details of these have not been published. The current RED
           IPP2 image processing uses primaries called RED Wide
           Gamut RGB, paired with a log encoding called Log3G10, the
-          details of which have been published in a white paper.
-          The numbers 3 and 10 in the name indicate that 18% grey
-          is encoded as <math display="inline" xmlns=
+          details of which have been published in a white
+          paper&nbsp;(). The numbers 3 and 10 in the name indicate
+          that 18% grey is encoded as <math display="inline" xmlns=
           "http://www.w3.org/1998/Math/MathML">
           <mrow>
             <mfrac>
@@ -8119,22 +8125,23 @@
           gamut primaries; it is simply that the matrices used in
           the camera to transform to them from the sensor native
           color space are different. As has been mentioned
-          previously in Section 3.3.1, a 3x3 camera matrix can only
-          ever be an approximation of the ideal transform to set of
-          encoding primaries. S-Gamut and S-Gamut3 use different
-          optimizations. S-Gamut3 has the additional advantage that
-          the transform to ACES is the same at all color
-          temperatures, whereas for S-Gamut, two Input Transforms
-          are provided by Sony for use under tungsten and daylight.
-          S-Gamut3.Cine is slightly less wide gamut than S-Gamut3,
-          and was designed to be more closely aligned with P3
-          primaries, making manual grading to P3 simpler. In a
-          scene-referred workflow there is no benefit to this, and
-          indeed recording in S-Gamut3.Cine will clip some colors
-          which may be present in the scene, compared to S-Gamut3.
-          Nonetheless, many people use S-Gamut3.Cine as the default
-          camera setting, so it is important to ascertain which was
-          used.</p>
+          previously in Section&nbsp;<a href=
+          "on-set.html#x26-880003.4.1">3.4.1</a>, a 3x3 camera
+          matrix can only ever be an approximation of the ideal
+          transform to a set of encoding primaries. S-Gamut and
+          S-Gamut3 use different optimizations. S-Gamut3 has the
+          additional advantage that the transform to ACES is the
+          same at all color temperatures, whereas for S-Gamut, two
+          Input Transforms are provided by Sony for use under
+          tungsten and daylight. S-Gamut3.Cine is slightly less
+          wide gamut than S-Gamut3, and was designed to be more
+          closely aligned with P3 primaries, making manual grading
+          to P3 simpler. In a scene-referred workflow there is no
+          benefit to this, and indeed recording in S-Gamut3.Cine
+          will clip some colors which may be present in the scene,
+          compared to S-Gamut3. Nonetheless, many people use
+          S-Gamut3.Cine as the default camera setting, so it is
+          important to ascertain which was used.</p>
           <p class="indent">As with Canon footage, using Sony’s own
           software can be a useful way of reading metadata from the
           files which might not otherwise be available. Some Sony
